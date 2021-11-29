@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <head>
+            <title>Snake Game</title>
+            <style>
+                body{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #faf8ef;
+                }
+                h1{
+                    margin: 20px;
+                }
+                canvas{
+                    display: block;
+                    margin: 0 auto;
+                }
+                .title {
+                    justify-self: center;
+                    align-self: center;
+                    font-size: 80px;
+                    font-weight: bold;
+                    color: #676059;
+                }
+                .howToPlay{
+                    justify-self: center;
+                    align-self: center;
+                    width: 608px;
+                    line-height: 1.65;
+                    font-size: 20px;
+                    color: #676059;
+                }
+                .reload-btn{
+                    justify-self: center;
+                    align-self: center;
+                    margin-bottom: 20px;
+                }
+                .hidden {
+                    display: none;
+                }
+            </style>
+        </head>
+
+        <h1 class="title">SNAKE MUL</h1>
+        <button class="reload-btn hidden">Try again</button>
+        <canvas id="snake" width="608" height="608"></canvas>
+        <div></div>
+        <script src="snake.js"></script>
+        <p class="howToPlay">
+            <b>HOW TO PLAY:</b>
+            Use your AWSD keys to move the snake. 
+            Eat the fruit to grow longer. 
+            PLEASE DONT EAT YOURSELF OR THE WALL!!!
+        </p>
+    </body>
+</html>
